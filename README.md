@@ -49,8 +49,8 @@ sudo rsync --verbose --keep-dirlinks --recursive --progress ~/backup/public_html
 7. Set correct permissions:
 
 ```bash
-sudo chown -R bitnami:daemon /opt/bitnami/apps/wordpress/htdocs
-sudo chmod g+w /opt/bitnami/apps/wordpress/htdocs/wp-config.php
+sudo chown bitnami:daemon -R /opt/bitnami/apps/wordpress/htdocs/
+sudo chmod g+w -R /opt/bitnami/apps/wordpress/htdocs/
 ```
 
 8. Get database password:
@@ -85,6 +85,10 @@ EXIT
 bitnami:~$ sudo /opt/bitnami/ctlscript.sh restart
 ```
 
+### Things to verify after a migration:
+1. Site address (URL).
+2. SMTP Configuration.
+3. Administration Email Address.
 
 ## Change site URL
 
