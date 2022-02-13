@@ -152,3 +152,11 @@ Restart server:
 ```bash
 sudo /opt/bitnami/ctlscript.sh restart
 ```
+
+## Upload to upload media - "The uploaded file could not be moved to wp-content/uploads"
+
+Need to update the file permission for `uploads` directory:
+
+```
+sudo chmod g+w -R /opt/bitnami/apps/wordpress/htdocs/wp-content/uploads
+```
