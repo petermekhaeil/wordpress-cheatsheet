@@ -9,6 +9,7 @@
   * [Updating Wordpress manually](#updating-wordpress-manually)
   * [Restart server](#restart-server)
   * [Update max file upload limit](#update-max-file-upload-limit)
+  * [Upload to upload media - "The uploaded file could not be moved to wp-content/uploads"](#upload-to-upload-media---the-uploaded-file-could-not-be-moved-to-wp-contentuploads)
   
 
 ## Migrating from cPanel to AWS Lightsail
