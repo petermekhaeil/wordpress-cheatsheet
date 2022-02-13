@@ -5,7 +5,10 @@
   * [Migrating from cPanel to AWS Lightsail](#migrating-from-cpanel-to-aws-lightsail)
   * [Change site URL](#change-site-url)
   * [Change wp-admin password](#change-wp-admin-password)
-  * [Updating Wordpress manually](#update-wordpress-manually)
+  * [Updating Wordpress manually](#updating-wordpress-manually)
+  * [Updating Wordpress manually](#updating-wordpress-manually)
+  * [Restart server](#restart-server)
+  * [Update max file upload limit](#update-max-file-upload-limit)
   
 
 ## Migrating from cPanel to AWS Lightsail
