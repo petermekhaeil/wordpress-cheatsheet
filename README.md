@@ -122,3 +122,30 @@ mysql -u root -p DB_NAME -e "UPDATE wp_users SET user_pass=MD5('NEWPASSWORD') WH
 3. Upload new `wp-includes` and `wp-admin`.
 4. Upload the individual files from the new `wp-content` folder, overwriting existing files. **Do not** replace the `wp-content` folder.
 5. Upload all new loose files from the root directory.
+
+## Restart server
+
+```bash
+sudo /opt/bitnami/ctlscript.sh restart
+```
+
+## Update max file upload limit
+
+Edit `php.ini`:
+
+```bash
+vi /opt/bitnami/php/etc/php.ini
+```
+
+And update these values:
+
+```ini
+upload_max_filesize = 1000M;
+post_max_size = 1000M;
+```
+
+Restart server:
+
+```bash
+sudo /opt/bitnami/ctlscript.sh restart
+```
