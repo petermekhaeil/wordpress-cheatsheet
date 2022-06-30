@@ -10,6 +10,7 @@
   * [Restart server](#restart-server)
   * [Update max file upload limit](#update-max-file-upload-limit)
   * [Upload to upload media - "The uploaded file could not be moved to wp-content/uploads"](#upload-to-upload-media---the-uploaded-file-could-not-be-moved-to-wp-contentuploads)
+  * [Renew a Let's Encrypt SSL certificate in a Bitnami stack hosted on a Lightsail instance](https://github.com/petermekhaeil/wordpress-cheatsheet/blob/master/README.md#renew-a-lets-encrypt-ssl-certificate-in-a-bitnami-stack-hosted-on-a-lightsail-instance)
   
 
 ## Migrating from cPanel to AWS Lightsail
