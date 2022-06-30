@@ -161,3 +161,27 @@ Need to update the file permission for `uploads` directory:
 ```
 sudo chmod g+w -R /opt/bitnami/apps/wordpress/htdocs/wp-content/uploads
 ```
+
+## Renew a Let's Encrypt SSL certificate in a Bitnami stack hosted on a Lightsail instance
+
+```
+sudo /opt/bitnami/ctlscript.sh stop
+
+sudo /opt/bitnami/letsencrypt/lego --tls --email="EMAIL-ADDRESS" --domains="DOMAIN" --path="/opt/bitnami/letsencrypt" renew --days 90
+
+sudo /opt/bitnami/ctlscript.sh start
+```
+
+Retrieve previous emails using:
+
+```
+sudo ls /opt/bitnami/letsencrypt/accounts/acm*
+```
+
+Confirm domain using:
+
+```
+sudo /opt/bitnami/letsencrypt/lego --path /opt/bitnami/letsencrypt list
+```
+
+https://aws.amazon.com/premiumsupport/knowledge-center/lightsail-bitnami-renew-ssl-certificate/
